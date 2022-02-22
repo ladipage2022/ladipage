@@ -1096,8 +1096,8 @@
     <div class="banner-top">
         <div class="container box-menu">
             <div class="box-banner-left">
-                <img class="item-banner img-logo" src="images/Logo.png">
-                <img class="img-logo-mobile" src="images/logo-mobile.png">
+                <img class="item-banner img-logo" src="images/Logo.png" onclick="location.reload();">
+                <img class="img-logo-mobile" src="images/logo-mobile.png" onclick="location.reload();">
                 <div class="menu-banner">
                     <span class="item-banner menu-text" id="click-whychoose">8 điểm ưu việt</span>
                     <span class="item-banner menu-text" id="click-thanhphan">thành phần</span>
@@ -1223,7 +1223,7 @@
                             <input type="text" class="input-infor-regis" placeholder="Số điện thoại*" />
                         </div>
                         <div class="col-12 box-input-infor">
-                            <textarea style="height: 156px;" placeholder="Để lại lời nhắn cho chúng tôi" class="input-infor-regis"></textarea>
+                            <textarea style="height: 156px;max-height:156px;min-height:156px;" placeholder="Để lại lời nhắn cho chúng tôi" class="input-infor-regis"></textarea>
                         </div>
                     </div>
                     <div class="box-btn-regis-infor regis-now">
@@ -1288,8 +1288,8 @@
                 Tại sao nên chọn cốm trí não <span>G-BRAIN?</span>
             </div>
             <div class="col-12">
-                <img src="" data-src="images/tai_sao_nen_chon.png" width="100%" height="auto" class="img-whychoose lazy-img" />
-                <img src="" data-src="images/tai_sao_nen_chon-mb.png" width="100%" height="auto" class="img-whychoose-mb lazy-img" />
+                <img src="images/tai_sao_nen_chon.png" width="100%" height="auto" class="img-whychoose lazy-img" />
+                <img src="images/tai_sao_nen_chon-mb.png" width="100%" height="auto" class="img-whychoose-mb lazy-img" />
             </div>
         </div>
     </div>
@@ -1421,7 +1421,7 @@
                             <input type="text" class="input-infor-regis" placeholder="Số điện thoại*" />
                         </div>
                         <div class="col-12 box-input-infor">
-                            <textarea style="height: 100px;" placeholder="Để lại lời nhắn cho chúng tôi" class="input-infor-regis"></textarea>
+                            <textarea style="height: 100px;min-height:100px;max-height:100px;" placeholder="Để lại lời nhắn cho chúng tôi" class="input-infor-regis"></textarea>
                         </div>
                     </div>
                     <div class="box-btn-regis-infor regis-now">
@@ -1536,23 +1536,23 @@
                     }
                 });
             }
-            function FirstLoadImage() {
-                $('.lazy-img').each(function () {
-                    var target = $(this).offset().top;
-                    var url = $(this).attr('data-src');
-                    var heightScreen = window.innerHeight;
-                    var scroolTop = $(window).scrollTop(); //vị trí hiện tại của thanh scrool với Top
-                    if (url) {
-                        if (target < (heightScreen + scroolTop)) {
-                            $(this).attr("src", url);
-                            $(this).removeClass('lazy-img');
-                        }
-                    }
-                });
-            }
+            //function FirstLoadImage() {
+            //    $('.lazy-img').each(function () {
+            //        var target = $(this).offset().top;
+            //        var url = $(this).attr('data-src');
+            //        var heightScreen = window.innerHeight;
+            //        var scroolTop = $(window).scrollTop(); //vị trí hiện tại của thanh scrool với Top
+            //        if (url) {
+            //            if (target < (heightScreen + scroolTop)) {
+            //                $(this).attr("src", url);
+            //                $(this).removeClass('lazy-img');
+            //            }
+            //        }
+            //    });
+            //}
             $(window).scroll(function () {
                 FirstLoadVideo();
-                FirstLoadImage();
+                //FirstLoadImage();
             });
         })
     </script>
