@@ -125,7 +125,7 @@
     }
     
     .line-content-banner {
-        width: 298px;
+        width: 216px;
         background: #FF5E00;
         height: 2px;
     }
@@ -256,24 +256,34 @@
     input:focus {
         outline: none;
     }
-    
+
     .title-uudai {
-        transform: skew(-16deg);
+        /*transform: skew(-16deg);*/
         background: #00194A;
         border-radius: 6px;
         text-align: center;
         text-transform: uppercase;
         color: #FECC2B;
         font-weight: 900;
+        font-style:italic;
+        animation-name: swing;
+        -webkit-animation-name: swing;
+        animation-delay: 1.5s;
+        -webkit-animation-delay: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
     }
-    
+
     .subtitle-uudai {
         transform: skew(-16deg);
         background: #71BFF3;
         border-radius: 6px;
         padding: 12px;
+        
     }
-    
+
     .box-uudai {
         background: #fff;
         border-radius: 16px;
@@ -325,7 +335,7 @@
         color: #FFFFFF;
         font-weight: bold;
     }
-    
+
     .box-btn-regis-infor {
         display: inline-flex;
         background: linear-gradient(180deg, #FF863F -28.33%, #FF5E00 100%);
@@ -337,6 +347,7 @@
         bottom: -30px;
         left: calc(50% - 148px);
         cursor: pointer;
+        animation: zoom-in-zoom-out 1.5s ease-out infinite;
     }
     
     .box-btn-regis-infor div {
@@ -503,6 +514,7 @@
         .banner-content-subtt {
             font-size: 20px;
             line-height: 24px;
+            margin-bottom:8px;
         }
     }
     
@@ -690,7 +702,7 @@
             padding-bottom: 16px;
         }
         .title-uudai {
-            transform: skew(-16deg);
+            /*transform: skew(-16deg);*/
             padding: 4px 24px;
             font-weight: 900;
             font-size: 18px;
@@ -911,8 +923,8 @@
             display: none;
         }
         .banner-content-tt {
-            font-size: 61px;
-            line-height: 74px;
+            font-size: 48px;
+            line-height: 64px;
         }
         .box-detail-suluachon-left {
             padding-right: 32px;
@@ -926,7 +938,7 @@
         }
         .banner-content-footer {
             font-size: 16px;
-            margin-top: 72px;
+            margin-top: 64px;
         }
         .box-content-banner {
             padding-bottom: 52px;
@@ -959,7 +971,7 @@
             padding-left: 24px;
         }
         .title-uudai {
-            transform: skew(-16deg);
+            /*transform: skew(-16deg);*/
             padding: 8px 24px;
             font-weight: 900;
             font-size: 34px;
@@ -1089,6 +1101,48 @@
             background-image: url("images/banner.png");
         }
     }
+    @keyframes swing
+    {
+        20% {
+            -webkit-transform: rotate(15deg);
+            -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
+        }
+
+        40% {
+            -webkit-transform: rotate(-10deg);
+            -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+        }
+        60% {
+            -webkit-transform: rotate(5deg);
+            -ms-transform: rotate(5deg);
+            transform: rotate(5deg);
+        }
+        80% {
+            -webkit-transform: rotate(-5deg);
+            -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+        }
+        100% {
+            -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+            transform: rotate(0);
+        }
+    }
+    @keyframes zoom-in-zoom-out {
+        0% {
+            transform: scale(1, 1);
+        }
+
+        50% {
+            transform: scale(1.1, 1.1);
+        }
+
+        100% {
+            transform: scale(1, 1);
+        }
+    }
 </style>
 
 <body>
@@ -1116,10 +1170,10 @@
         <div class="container">
             <div class="box-content-banner">
                 <div class="banner-content-subtt">
-                    Chọn dinh dưỡng chuẩn
+                    Chọn dinh dưỡng cho trẻ em
                 </div>
                 <div class="banner-content-tt">
-                    Chọn G-BRAIN
+                    Chọn cốm trí não <br /> G-BRAIN
                 </div>
                 <div class="line-content-banner">
 
@@ -1133,45 +1187,45 @@
     <div class="box-section1">
         <div class="container">
             <div class="title-section1">
-                <span>Truyền thông nói về</span> <span>G-BRAIN</span>
+                <span>Truyền thông nói về</span> <span>CỐM TRÍ NÃO G-BRAIN</span>
             </div>
             <div class="row">
                 <div class="col-md-4 col-12 box-video-content1">
                     <div class="box-detail-video">
                         <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/FpNQE-6eO4c?rel=0&autoplay=1&loop=1&playlist=FpNQE-6eO4c" class="lazy-video"></iframe>
-                        <div class="subtt-box-detail-video">Phóng sự VTC6 đưa tin</div>
+                        <div class="subtt-box-detail-video">Phóng sự VTC6 đưa tin về <br />cốm trí não G-Brain</div>
                     </div>
 
                 </div>
                 <div class="col-md-4 col-12 box-video-content1">
                     <div class="box-detail-video">
                         <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/OPbjJ8irSfs?rel=0&autoplay=1&loop=1&playlist=OPbjJ8irSfs" class="lazy-video"></iframe>
-                        <div class="subtt-box-detail-video">Bản tin tiêu dùng vtv 24h</div>
+                        <div class="subtt-box-detail-video">Bản tin tiêu dùng vtv 24h về <br />cốm trí não G-Brain</div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 box-video-content1">
                     <div class="box-detail-video">
                         <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/i8FWVXmIPxI?rel=0&autoplay=1&loop=1&playlist=i8FWVXmIPxI" class="lazy-video"></iframe>
-                        <div class="subtt-box-detail-video">Mẹ thần đồng Đỗ Nhật Nam nói về G-Brain</div>
+                        <div class="subtt-box-detail-video">Mẹ thần đồng Đỗ Nhật Nam nói về <br />cốm trí não G-Brain</div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 box-video-content1">
                     <div class="box-detail-video">
                         <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/cPFvEBPUFL4?rel=0&autoplay=1&loop=1&playlist=cPFvEBPUFL4" class="lazy-video"></iframe>
-                        <div class="subtt-box-detail-video">Diễn viên Lâm Vỹ Dạ chi sẻ về G-Brain</div>
+                        <div class="subtt-box-detail-video">Diễn viên Lâm Vỹ Dạ review về <br /> cốm trí não G-Brain</div>
                     </div>
 
                 </div>
                 <div class="col-md-4 col-12 box-video-content1">
                     <div class="box-detail-video">
                         <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/2eeU0We4jnc?rel=0&autoplay=1&loop=1&playlist=2eeU0We4jnc" class="lazy-video"></iframe>
-                        <div class="subtt-box-detail-video">MC Diệp Chi chia sẻ về G-Brain</div>
+                        <div class="subtt-box-detail-video">MC Diệp Chi review về <br />cốm trí não G-Brain</div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 box-video-content1">
                     <div class="box-detail-video">
-                        <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/c5vfFDuaRtA?rel=0&autoplay=1&loop=1&playlist=c5vfFDuaRtA" class="lazy-video"></iframe>
-                        <div class="subtt-box-detail-video">Diễn viên Huyền Lizzie chia sẻ về G-Brain</div>
+                        <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/QOHwJ1KIFBM?rel=0&autoplay=1&loop=1&playlist=QOHwJ1KIFBM" class="lazy-video"></iframe>
+                        <div class="subtt-box-detail-video">Diễn viên Bảo Thanh review về <br />cốm trí não G-Brain</div>
                     </div>
                 </div>
             </div>
@@ -1250,7 +1304,7 @@
             <div class="group-detail-suluachon">
                 <div class="box-text col-12">
                     <div class="title-suluachon">
-                        <span>G-Brain</span> sự lựa chọn hoàn hảo <br />cho trẻ từ 2-18 tuổi
+                        <span>CỐM TRÍ NÃO G-Brain</span> sự lựa chọn hoàn hảo <br />cho trẻ từ 2-18 tuổi
                     </div>
                     <div class="content-box-suluachon">
                         Cung cấp lượng DHA, Vitamin... từ tảo Spirulina, quả Óc chó... <br /> theo tiêu chuẩn WHO khuyến nghị.
@@ -1285,7 +1339,7 @@
     <div class="box-why-choose">
         <div class="container">
             <div class="title-why-choose">
-                Tại sao nên chọn cốm trí não <span>G-BRAIN?</span>
+                Tại sao nên chọn  <span>CỐM TRÍ NÃO G-BRAIN?</span>
             </div>
             <div class="col-12">
                 <img src="images/tai_sao_nen_chon.png" width="100%" height="auto" class="img-whychoose lazy-img" />
@@ -1324,8 +1378,8 @@
         <div class="container">
             <div class="tt-review">
                 <span>Các mẹ nói gì</span>
-                <span> sau khi cho con sử dụng </span>
-                <span>G-BRAIN</span>
+                <span> sau khi cho con sử dụng </span> <br />
+                <span style="color: #019044 ">CỐM TRÍ NÃO G-BRAIN</span>
             </div>
             <div class="box-group-review">
                 <div class="col-md-4 col-12">
