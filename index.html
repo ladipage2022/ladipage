@@ -258,7 +258,7 @@
     }
 
     .title-uudai {
-        /*transform: skew(-16deg);*/
+        transform: skew(-16deg);
         background: #00194A;
         border-radius: 6px;
         text-align: center;
@@ -266,19 +266,19 @@
         color: #FECC2B;
         font-weight: 900;
         font-style: italic;
-        animation-name: swing;
+        /*animation-name: swing;
         -webkit-animation-name: swing;
         animation-delay: 1.5s;
         -webkit-animation-delay: 1.5s;
         animation-duration: 1.5s;
         -webkit-animation-duration: 1.5s;
         animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;*/
     }
 
     .subtitle-uudai {
         transform: skew(-16deg);
-        background: #71BFF3;
+        background: #198754;
         border-radius: 6px;
         padding: 12px;
     }
@@ -442,6 +442,7 @@
         border-radius: 6px;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
     }
 
     .box-regis-infor {
@@ -471,22 +472,24 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
+
     .box-detail-comment {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .point-left {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .point-right {
         display: flex;
         flex-direction: column;
-        
     }
 
     @media screen and (max-width: 480px) {
@@ -494,7 +497,6 @@
             width: 100%;
             height: auto;
         }
-
     }
 
     @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -519,16 +521,20 @@
             padding-bottom: 16px;
             padding-top: 16px;
         }
+
         .point-right {
             padding-left: 32px;
             border-left: 1px solid rgba(210, 210, 210, 0.5);
             padding-bottom: 16px;
             padding-top: 16px;
         }
+
         .box-detail-top img {
-            width: 25%;
+            width: 30%;
             height: auto;
             max-height: 457px;
+            margin-left:auto;
+            margin-right:auto;
         }
 
         .box-detail-bottom img:nth-child(1) {
@@ -560,7 +566,7 @@
         }
     /* box thanh phần chính */
 
-        .box-thanhphan-chinh {
+    .box-thanhphan-chinh {
         padding: 40px 0;
     }
     /* box tại sao nên chọn */
@@ -656,48 +662,56 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
         border-radius: 6px;
     }
+
     .box-point {
         display: flex;
         flex-wrap: wrap;
     }
+
     .detail-point-right {
         display: flex;
-        align-items:center;
+        align-items: center;
     }
+
     .text-point {
         color: rgb(0, 0, 0);
         font-size: 16px;
         text-align: center;
         line-height: 1.6;
-        width:16px;
+        width: 16px;
     }
+
     .text-percent {
         color: rgb(0, 0, 0);
         font-size: 16px;
         text-align: center;
         line-height: 1.6;
         width: 42px;
-        min-width:42px;
+        min-width: 42px;
     }
+
     .detail-point-right img {
         width: 24px;
         height: 24px;
     }
+
     .bg-line-gray {
         background: #7e7d7d;
-        width:100%;
-        max-width:250px;
-        height:10px;
-        border-radius:100px;
-        margin-right:8px;
-        margin-left:8px;
+        width: 100%;
+        max-width: 250px;
+        height: 10px;
+        border-radius: 100px;
+        margin-right: 8px;
+        margin-left: 8px;
     }
+
     .bg-line-green {
         background: #0fc328;
         max-width: 250px;
         height: 10px;
         border-radius: 100px;
     }
+
     .text-evaluate {
         color: rgb(0, 0, 0);
         font-size: 16px;
@@ -705,6 +719,7 @@
         text-align: center;
         line-height: 1.6;
     }
+
     .point-evaluate {
         color: rgb(255, 0, 0);
         font-size: 32px;
@@ -712,17 +727,90 @@
         text-align: center;
         line-height: 1.6;
     }
-    .star-evaluate img{
-        width:24px;
-        height:24px;
+
+    .star-evaluate img {
+        width: 24px;
+        height: 24px;
     }
+
     .num-comment {
         color: rgb(126, 125, 125);
         font-size: 14px;
         text-align: center;
         line-height: 1.6;
-        margin-top:8px;
+        margin-top: 8px;
     }
+
+    .row-comment-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-cmt {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+    }
+
+    .name-cmt {
+        color: rgb(78, 77, 77);
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .time-cmt {
+        color: rgb(99, 99, 99);
+        font-size: 15px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .row-comment-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-subtt-cmt {
+        display: flex;
+    }
+
+        .row-subtt-cmt img {
+            width: 20px;
+            height: 20px;
+        }
+
+    .subtt-of-cmt {
+        color: rgb(0, 0, 0);
+        line-height: 1.6;
+        margin-left: 8px;
+        font-weight: 600;
+    }
+
+    .row-certificate {
+        display: flex;
+    }
+
+    .icon-certificate {
+        width: 20px;
+        height: 22px;
+    }
+
+    .text-certificate {
+        color: rgb(1, 195, 26);
+        font-size: 13px;
+        line-height: 1.6;
+        margin-left: 8px;
+        margin-top: 4px;
+    }
+
     @media screen and (max-width: 768px) {
         .point-left {
             padding-bottom: 8px;
@@ -733,6 +821,7 @@
             padding-bottom: 16px;
             padding-top: 8px;
         }
+
         .box-banner-left {
             flex-direction: column;
             height: 85px;
@@ -838,7 +927,7 @@
         }
 
         .subtitle-uudai .text2 {
-            color: #00194A;
+            color: #FECC2B;
             font-style: italic;
             font-weight: 900;
             font-size: 20px;
@@ -1069,6 +1158,7 @@
         .box-content-banner {
             margin-top: 140px;
         }
+
         .box-title-comment {
             color: #27547D;
             font-size: 18px;
@@ -1077,12 +1167,42 @@
             margin-bottom: 40px;
             margin-top: 16px;
         }
+
+        .row-comment-left {
+            padding: 8px;
+            min-width: 90px;
+        }
+
+        .name-cmt {
+            font-size: 14px;
+        }
+
+        .time-cmt {
+            font-size: 13px;
+        }
+
+        .subtt-of-cmt {
+            font-size: 13px;
+        }
+
+        .row-comment-right {
+            padding: 8px;
+        }
+
+        .text-comment {
+            font-size: 13px;
+        }
+        .row-subtt-cmt img {
+            width: 16px;
+            height: 16px;
+        }
     }
 
     @media screen and (min-width: 769px) {
         .box-point {
             border-bottom: 1px solid rgba(210, 210, 210, 0.5);
         }
+
         .box-banner-left {
             height: 72px;
         }
@@ -1179,7 +1299,7 @@
         }
 
         .subtitle-uudai .text2 {
-            color: #00194A;
+            color: #FECC2B;
             font-style: italic;
             font-weight: 900;
             font-size: 36px;
@@ -1324,6 +1444,7 @@
         .bgimg {
             background-image: url("images/banner.png");
         }
+
         .box-title-comment {
             color: #27547D;
             font-size: 36px;
@@ -1332,7 +1453,34 @@
             margin-bottom: 40px;
             margin-top: 16px;
         }
+
+        .row-comment-left {
+            padding: 16px;
+            min-width: 128px;
+            width: 128px;
+        }
+
+        .name-cmt {
+            font-size: 16px;
+        }
+
+        .time-cmt {
+            font-size: 15px;
+        }
+
+        .subtt-of-cmt {
+            font-size: 16px;
+        }
+
+        .row-comment-right {
+            padding: 16px;
+        }
+
+        .text-comment {
+            font-size: 16px;
+        }
     }
+
 
     @keyframes swing {
         20% {
@@ -1378,6 +1526,29 @@
         100% {
             transform: scale(1, 1);
         }
+    }
+
+    .row-comment {
+        display: flex;
+        border-bottom: 1px solid rgba(210, 210, 210, 0.5);
+    }
+
+    .box-list-comment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4px;
+    }
+    .img-review-cmt {
+        max-width: 400px;
+        height: auto;
+        width: 100%;
+        margin-top: 16px;
     }
 </style>
 
@@ -1454,14 +1625,14 @@
                 </div>
                 <div class="col-md-4 col-12 box-video-content1">
                     <div class="box-detail-video">
-                        <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/2eeU0We4jnc?rel=0&autoplay=1&loop=1&playlist=2eeU0We4jnc" class="lazy-video"></iframe>
-                        <div class="subtt-box-detail-video">MC Diệp Chi review về <br />cốm trí não G-Brain</div>
+                        <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/rz__lPl3C2o?rel=0&autoplay=1&loop=1&playlist=rz__lPl3C2o" class="lazy-video"></iframe>
+                        <div class="subtt-box-detail-video">BTV Hoài Anh review về <br />cốm trí não G-Brain</div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 box-video-content1">
                     <div class="box-detail-video">
-                        <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/QOHwJ1KIFBM?rel=0&autoplay=1&loop=1&playlist=QOHwJ1KIFBM" class="lazy-video"></iframe>
-                        <div class="subtt-box-detail-video">Diễn viên Bảo Thanh review về <br />cốm trí não G-Brain</div>
+                        <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/2eeU0We4jnc?rel=0&autoplay=1&loop=1&playlist=2eeU0We4jnc" class="lazy-video"></iframe>
+                        <div class="subtt-box-detail-video">MC Diệp Chi review về <br />cốm trí não G-Brain</div>
                     </div>
                 </div>
             </div>
@@ -1575,17 +1746,20 @@
     <div class="box-why-choose">
         <div class="container">
             <div class="title-why-choose">
-                Tại sao nên chọn <span>CỐM TRÍ NÃO G-BRAIN?</span>
+                Tại sao nên chọn <span style="color: #019044">CỐM TRÍ NÃO G-BRAIN?</span>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-md-10" style="margin-left:auto;margin-right:auto;">
                 <img src="images/tai_sao_nen_chon.png" width="100%" height="auto" class="img-whychoose lazy-img" />
                 <img src="images/tai_sao_nen_chon-mb.png" width="100%" height="auto" class="img-whychoose-mb lazy-img" />
             </div>
         </div>
     </div>
     <div class="box-thanhphan-chinh">
+        <div class="tt-giaychungnhan">
+            Thành phần chính của <br /><span>CỐM TRÍ NÃO G-BRAIN</span>
+        </div>
         <div class="container">
-            <div class="col-12">
+            <div class="col-12 col-md-10" style="margin-left:auto;margin-right:auto;">
                 <img src="images/thanhphan_chinh.png" width="100%" height="auto" class="img-thanhphan" />
                 <img src="images/thanhphan_chinh-mb.png" width="100%" height="auto" class="img-thanhphan-mb" />
             </div>
@@ -1601,11 +1775,10 @@
                     <img src="images/gcn01.png" />
                     <img src="images/gcn02.png" />
                     <img src="images/gcn03.png" />
-                    <img src="images/gcn04.png" />
                 </div>
                 <div class="box-detail-bottom">
+                    <img src="images/gcn04.png" />
                     <img src="images/gcn05.png" />
-                    <img src="images/gcn06.png" />
                 </div>
             </div>
         </div>
@@ -1755,7 +1928,231 @@
                 </div>
             </div>
             <div class="box-list-comment col-12">
+                <div class="row-comment col-12 col-md-10">
 
+                    <div class="row-comment-left">
+                        <div class="img-cmt" style="background-image:url('images/cmt-kh1.jpg')"></div>
+                        <div class="name-cmt">Minh Anh</div>
+                        <div class="time-cmt">Hôm nay</div>
+                    </div>
+                    <div class="row-comment-right">
+                        <div class="row-subtt-cmt">
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <div class="subtt-of-cmt">
+                                Sản phấm rất tốt
+                            </div>
+                        </div>
+                        <div class="row-certificate">
+                            <div class="icon-certificate">
+                                <img src="images/bxs_check-shield.svg" />
+                            </div>
+                            <div class="text-certificate">
+                                Chứng nhận đã mua hàng
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="text-comment">Tôi sử dụng cho con được 2 tháng và thấy khá là hài lòng về sản phẩm</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row-comment col-12 col-md-10">
+
+                    <div class="row-comment-left">
+                        <div class="img-cmt" style="background-image:url('images/cmt-kh2.jpg')"></div>
+                        <div class="name-cmt">Lê Dung</div>
+                        <div class="time-cmt">Hôm nay</div>
+                    </div>
+                    <div class="row-comment-right">
+                        <div class="row-subtt-cmt">
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <div class="subtt-of-cmt">
+                                Hàng chính hãng
+                            </div>
+                        </div>
+                        <div class="row-certificate">
+                            <div class="icon-certificate">
+                                <img src="images/bxs_check-shield.svg" />
+                            </div>
+                            <div class="text-certificate">
+                                Chứng nhận đã mua hàng
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="text-comment">Rất thích cốm vì nó thơm con rât thích  sử dụng được 1 tuần thấy con nhanh nhẹn lên hẳn ăn uống ngon ho.</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row-comment col-12 col-md-10">
+
+                    <div class="row-comment-left">
+                        <div class="img-cmt" style="background-image:url('images/cmt-kh3.png')"></div>
+                        <div class="name-cmt">Mai Ngọc</div>
+                        <div class="time-cmt">Hôm nay</div>
+                    </div>
+                    <div class="row-comment-right">
+                        <div class="row-subtt-cmt">
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <div class="subtt-of-cmt">
+                                Thấy đang được sale mua
+                            </div>
+                        </div>
+                        <div class="row-certificate">
+                            <div class="icon-certificate">
+                                <img src="images/bxs_check-shield.svg" />
+                            </div>
+                            <div class="text-certificate">
+                                Chứng nhận đã mua hàng
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="text-comment">Con mình đây các mẹ ạ sau khi sử dụng hết 1 liệu trình thấy bé nhanh nhẹn hơn hẳn, ngoan hơn, hôm nay rảnh lên feedback cho các mẹ khác..hihi</div>
+                            <img class="img-review-cmt" src="images/img-review-cmt.jpg"/>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row-comment col-12 col-md-10">
+
+                    <div class="row-comment-left">
+                        <div class="img-cmt" style="background-image:url('images/cmt-kh4.png')"></div>
+                        <div class="name-cmt">Lan Anh</div>
+                        <div class="time-cmt">Hôm nay</div>
+                    </div>
+                    <div class="row-comment-right">
+                        <div class="row-subtt-cmt">
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <div class="subtt-of-cmt">
+                                Cảm ơn G-brain
+                            </div>
+                        </div>
+                        <div class="row-certificate">
+                            <div class="icon-certificate">
+                                <img src="images/bxs_check-shield.svg" />
+                            </div>
+                            <div class="text-certificate">
+                                Chứng nhận đã mua hàng
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="text-comment">Rất rất hài lòng, sản phẩm rất thơm và ngậy con rất thích. Đã giới thiệu thử cho các mẹ khác...</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row-comment col-12 col-md-10">
+
+                    <div class="row-comment-left">
+                        <div class="img-cmt" style="background-image:url('images/cmt-kh5.jpg')"></div>
+                        <div class="name-cmt">Hà Nguyễn</div>
+                        <div class="time-cmt">Hôm nay</div>
+                    </div>
+                    <div class="row-comment-right">
+                        <div class="row-subtt-cmt">
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <div class="subtt-of-cmt">
+                                Rất tốt, đáng đồng tiền
+                            </div>
+                        </div>
+                        <div class="row-certificate">
+                            <div class="icon-certificate">
+                                <img src="images/bxs_check-shield.svg" />
+                            </div>
+                            <div class="text-certificate">
+                                Chứng nhận đã mua hàng
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="text-comment">Được chị giới thiệu mua sản phẩm và đã dùng, con rất thích hi vọng cải thiện được nhiều về con</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row-comment col-12 col-md-10">
+
+                    <div class="row-comment-left">
+                        <div class="img-cmt" style="background-image:url('images/cmt-kh6.jpg')"></div>
+                        <div class="name-cmt">Yến Võ</div>
+                        <div class="time-cmt">Hôm nay</div>
+                    </div>
+                    <div class="row-comment-right">
+                        <div class="row-subtt-cmt">
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <div class="subtt-of-cmt">
+                                Ship nhanh và được miễn phí
+                            </div>
+                        </div>
+                        <div class="row-certificate">
+                            <div class="icon-certificate">
+                                <img src="images/bxs_check-shield.svg" />
+                            </div>
+                            <div class="text-certificate">
+                                Chứng nhận đã mua hàng
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="text-comment">Sẽ quay lại và ủng hộ tiếp nếu hiệu quả, hàng đóng bọc rất đẹp, chăm sóc khách rất nhiệt tình, hài lòng ,..</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row-comment col-12 col-md-10">
+
+                    <div class="row-comment-left">
+                        <div class="img-cmt" style="background-image:url('images/cmt-kh7.jpg')"></div>
+                        <div class="name-cmt">Việt Hương</div>
+                        <div class="time-cmt">Hôm nay</div>
+                    </div>
+                    <div class="row-comment-right">
+                        <div class="row-subtt-cmt">
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <img src="images/icon-star.png" />
+                            <div class="subtt-of-cmt">
+                                Gbrain Rất Tốt
+                            </div>
+                        </div>
+                        <div class="row-certificate">
+                            <div class="icon-certificate">
+                                <img src="images/bxs_check-shield.svg"/>
+                            </div>
+                            <div class="text-certificate">
+                                Chứng nhận đã mua hàng
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="text-comment">Sài hết liệu trình này sẽ quay lại ủng hộ</div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -1763,7 +2160,8 @@
         <div class="container">
             <div class="box-detail-regis-infor">
                 <div class="col-12 col-md-6 box-left-regis">
-                    <img src="images/banner-uudai.png" width="100%" />
+                    <!--<img src="images/banner-uudai.png" width="100%" />-->
+                    <img src="images/price.png" width="100%" />
                 </div>
                 <div class="col-12 col-md-6 box-right-regis">
                     <div class="box-infor-regis box-infor-regis-uudai">
@@ -1809,7 +2207,7 @@
 
     <footer class="box-footer">
         <div class="container">
-            <img class="" src="images/Logo.png">
+            <img class="" src="images/Logo.png" style="max-width:319px;max-height:59px;height:auto;">
             <div class="box-group-footer">
                 <div class="box-left-footer col-md-8 col-12">
                     <div class="box-detailt-footer">
