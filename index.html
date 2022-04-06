@@ -472,7 +472,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .box-detail-comment {
@@ -517,6 +517,10 @@
     }
 
     @media screen and (min-width: 769px) {
+        .box-detail-bottom img {
+            padding-left: 40px;
+            padding-left: 40px;
+        }
         .point-left {
             padding-bottom: 16px;
             padding-top: 16px;
@@ -533,8 +537,8 @@
             width: 30%;
             height: auto;
             max-height: 457px;
-            margin-left:auto;
-            margin-right:auto;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .box-detail-bottom img:nth-child(1) {
@@ -810,15 +814,18 @@
         margin-left: 8px;
         margin-top: 4px;
     }
+
     .tt-lotrinh {
         color: #27547D;
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
     }
-    .text1-lotrinh{
-        font-weight:bold;
+
+    .text1-lotrinh {
+        font-weight: bold;
     }
+
     @media screen and (max-width: 768px) {
         .point-left {
             padding-bottom: 8px;
@@ -1158,7 +1165,7 @@
         }
 
         .bgimg {
-            background-image: url("images/banner-mb.png");
+            background-image: url("images/banner-mb.jpg");
             margin-top: 80px;
             min-height: 80%;
         }
@@ -1200,21 +1207,33 @@
         .text-comment {
             font-size: 13px;
         }
+
         .row-subtt-cmt img {
             width: 16px;
             height: 16px;
         }
+
         .tt-lotrinh {
             font-size: 18px;
             padding-bottom: 16px;
             padding-top: 16px;
         }
+
         .text1-lotrinh {
             font-size: 16px;
         }
+
         .text2-lotrinh {
             font-size: 16px;
             margin-bottom: 16px;
+        }
+
+        .box-left-sosanh div {
+            font-size: 16px;
+            margin-top: 16px;
+        }
+        .box-left-loiich{
+            display:none;
         }
     }
 
@@ -1462,7 +1481,7 @@
         }
 
         .bgimg {
-            background-image: url("images/banner.png");
+            background-image: url("images/banner.jpg");
         }
 
         .box-title-comment {
@@ -1499,11 +1518,13 @@
         .text-comment {
             font-size: 16px;
         }
+
         .tt-lotrinh {
             font-size: 36px;
             padding-bottom: 40px;
             padding-top: 40px;
         }
+
         .text1-lotrinh {
             font-size: 21px;
         }
@@ -1511,6 +1532,26 @@
         .text2-lotrinh {
             font-size: 21px;
             margin-bottom: 20px;
+        }
+        .box-left-sosanh {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+            .box-left-sosanh div {
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+        .box-left-loiich {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+        .box-left-loiich div {
+            font-size: 24px;
+        }
+        .box-right-loiich {
+            padding-right: 40px;
+            padding-left: 40px;
         }
     }
 
@@ -1577,12 +1618,33 @@
         flex-direction: column;
         margin-top: 4px;
     }
+
     .img-review-cmt {
         max-width: 400px;
         height: auto;
         width: 100%;
         margin-top: 16px;
     }
+
+    .group-sosanh {
+        padding-top: 40px;
+        padding-bottom:40px;
+    }
+
+    .box-sosanh {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+            .box-left-sosanh div span {
+                font-weight: bold;
+            }
+    .group-loiich {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
 </style>
 
 <body>
@@ -1610,7 +1672,7 @@
         <div class="container">
             <div class="box-content-banner">
                 <div class="banner-content-subtt">
-                    Chọn dinh dưỡng cho trẻ 
+                    Chọn dinh dưỡng cho trẻ
                 </div>
                 <div class="banner-content-tt">
                     Chọn cốm trí não <br /> G-BRAIN
@@ -1639,8 +1701,8 @@
                 </div>
                 <div class="col-md-4 col-12 box-video-content1">
                     <div class="box-detail-video">
-                        <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/OPbjJ8irSfs?rel=0&autoplay=1&loop=1&playlist=OPbjJ8irSfs" class="lazy-video"></iframe>
-                        <div class="subtt-box-detail-video">Bản tin tiêu dùng vtv 24h về <br />cốm trí não G-Brain</div>
+                        <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/ef0nJoJ0vAo?rel=0&autoplay=1&loop=1&playlist=ef0nJoJ0vAo" class="lazy-video"></iframe>
+                        <div class="subtt-box-detail-video">Bảo Thanh review về <br />cốm trí não G-Brain</div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 box-video-content1">
@@ -1792,9 +1854,61 @@
             Thành phần chính của <br /><span>CỐM TRÍ NÃO G-BRAIN</span>
         </div>
         <div class="container">
-            <div class="col-12 col-md-10" style="margin-left:auto;margin-right:auto;">
+            <div class="col-12 col-md-10" style="margin-left:auto;margin-right:auto;margin-bottom:40px;">
                 <img src="images/thanhphan_chinh.png" width="100%" height="auto" class="img-thanhphan" />
                 <img src="images/thanhphan_chinh-mb.png" width="100%" height="auto" class="img-thanhphan-mb" />
+            </div>
+        </div>
+        <div class="group-sosanh">
+            <div class="tt-lotrinh">
+                SO SÁNH G-BRAIN VỚI DƯỠNG CHẤT & THỰC PHẨM
+            </div>
+            <div class="container">
+                <div class="box-sosanh">
+                    <div class="col-md-6 col-12 box-left-sosanh">
+                        <div><span>Dầu cá</span>: có mùi tanh, hàm lượng DHA thấp hơn, dễ nóng trong, táo bón >< G-Brain có lượng DHA gấp 4,5 lần 1 viên dầu cá</div>
+                        <div><span>Cá</span>: Có mùi tanh, ít DHA hơn (phải ăn nhiều cá mới đủ), nhiều trẻ không thích ăn cá >< B-Brain có mùi thơm dịu ngọt</div>
+                        <div><span>Sữa tươi</span>: Hàm lượng DHA thấp >< G-Brain có hàm lượng DHA = 10 cốc sữa</div>
+                    </div>
+                    <div class="col-md-6 col-12 box-right-sosanh">
+                        <img src="images/img-sosanh.png" style="width:100%" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="group-loiich">
+            <div class="tt-lotrinh">
+                LỢI ÍCH KHI CON CÓ TRÍ NÃO TỐT?
+            </div>
+            <div class="container">
+                <div class="box-sosanh" style="flex-wrap:wrap-reverse">
+                    <div class="col-md-6 col-12 box-left-loiich">
+                        <img src="images/img-loiich.png" style="width:100%" />
+                    </div>
+                    <div class="col-md-6 col-12 box-right-loiich">
+                        <div class="checkbox-slt">
+                            <img src="images/check_box.png" />
+                            <span>Con thông minh hơn</span>
+                        </div>
+                        <div class="checkbox-slt">
+                            <img src="images/check_box.png" />
+                            <span>Nhanh nhẹn, hoạt bát</span>
+                        </div>
+                        <div class="checkbox-slt">
+                            <img src="images/check_box.png" />
+                            <span>Ngoan ngoãn vâng lời ba mẹ</span>
+                        </div>
+                        <div class="checkbox-slt">
+                            <img src="images/check_box.png" />
+                            <span>Tiếp thu kiến thức và học tập tốt hơn</span>
+                        </div>
+                        <div class="checkbox-slt">
+                            <img src="images/check_box.png" />
+                            <span>Ba mẹ nuôi dạy con nhàn tênh</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <div class="tt-lotrinh">
@@ -2066,7 +2180,7 @@
                         </div>
                         <div class="comment">
                             <div class="text-comment">Con mình đây các mẹ ạ sau khi sử dụng hết 1 liệu trình thấy bé nhanh nhẹn hơn hẳn, ngoan hơn, hôm nay rảnh lên feedback cho các mẹ khác..hihi</div>
-                            <img class="img-review-cmt" src="images/img-review-cmt.jpg"/>
+                            <img class="img-review-cmt" src="images/img-review-cmt.jpg" />
                         </div>
                     </div>
 
@@ -2187,7 +2301,7 @@
                         </div>
                         <div class="row-certificate">
                             <div class="icon-certificate">
-                                <img src="images/bxs_check-shield.svg"/>
+                                <img src="images/bxs_check-shield.svg" />
                             </div>
                             <div class="text-certificate">
                                 Chứng nhận đã mua hàng
