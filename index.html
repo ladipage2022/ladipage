@@ -368,7 +368,7 @@
     /* box-footer */
 
     .box-footer {
-        background: #060035;
+        background: #019044;
         padding-top: 40px;
         padding-bottom: 80px;
         color: #fff;
@@ -521,6 +521,7 @@
             padding-left: 40px;
             padding-left: 40px;
         }
+
         .point-left {
             padding-bottom: 16px;
             padding-top: 16px;
@@ -637,6 +638,12 @@
             font-size: 32px;
             color: #27547D;
         }
+
+    .subtitle-suluachon {
+        font-weight: 500;
+        font-size: 32px;
+        color: #27547D;
+    }
     /*box-review*/
 
     .box-review {
@@ -818,7 +825,6 @@
     .tt-lotrinh {
         color: #27547D;
         text-align: center;
-        text-transform: uppercase;
         font-weight: bold;
     }
 
@@ -827,6 +833,12 @@
     }
 
     @media screen and (max-width: 768px) {
+        .group-sosanh{
+            padding-top:0px !important;
+        }
+        .group-loiich {
+            padding-top: 0px !important;
+        }
         .point-left {
             padding-bottom: 8px;
             padding-top: 8px;
@@ -976,10 +988,12 @@
 
         .box-input-name {
             padding-bottom: 12px;
+            padding-right:6px;
         }
 
         .box-input-phone {
             padding-bottom: 12px;
+            padding-left: 6px;
         }
 
         .tt-box-regis {
@@ -1043,6 +1057,10 @@
             font-size: 16px;
         }
 
+        .subtitle-suluachon {
+            font-size: 16px;
+        }
+
         .box-detail-suluachon-right {
             padding-left: 16px;
         }
@@ -1055,8 +1073,8 @@
         .title-why-choose {
             font-size: 18px;
             padding-bottom: 16px;
-            display:flex;
-            flex-direction:column;
+            display: flex;
+            flex-direction: column;
         }
 
         .img-whychoose {
@@ -1234,10 +1252,26 @@
             font-size: 16px;
             margin-top: 16px;
         }
-        .box-left-loiich{
+
+        .box-left-loiich {
             /*display:none;*/
-            margin-top:32px;
+            margin-top: 32px;
         }
+
+        .box-img-sosanh img {
+            width: 100%;
+            height: auto;
+        }
+
+        .box-img-lotrinh img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .box-img-lotrinh {
+        display: flex;
+        justify-content: center;
     }
 
     @media screen and (min-width: 769px) {
@@ -1251,7 +1285,7 @@
 
         .item-banner {
             margin-right: 48px;
-            margin-bottom:-5px;
+            margin-bottom: -5px;
         }
 
         .box-banner-right {
@@ -1537,6 +1571,7 @@
             font-size: 21px;
             margin-bottom: 20px;
         }
+
         .box-left-sosanh {
             padding-right: 40px;
             padding-left: 40px;
@@ -1546,13 +1581,16 @@
                 font-size: 24px;
                 margin-bottom: 32px;
             }
+
         .box-left-loiich {
             padding-right: 40px;
             padding-left: 40px;
         }
-        .box-left-loiich div {
-            font-size: 24px;
-        }
+
+            .box-left-loiich div {
+                font-size: 24px;
+            }
+
         .box-right-loiich {
             padding-right: 40px;
             padding-left: 40px;
@@ -1632,7 +1670,7 @@
 
     .group-sosanh {
         padding-top: 40px;
-        padding-bottom:40px;
+        padding-bottom: 40px;
     }
 
     .box-sosanh {
@@ -1641,14 +1679,19 @@
         flex-wrap: wrap;
     }
 
-            .box-left-sosanh div span {
-                font-weight: bold;
-            }
+    .box-img-sosanh {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-left-sosanh div span {
+        font-weight: bold;
+    }
+
     .group-loiich {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    
 </style>
 
 <body>
@@ -1656,8 +1699,8 @@
     <div class="banner-top">
         <div class="container box-menu">
             <div class="box-banner-left">
-                <img class="item-banner img-logo" src="images/Logo.png" onclick="location.reload();">
-                <img class="img-logo-mobile" src="images/logo-mobile.png" onclick="location.reload();">
+                <img class="item-banner img-logo" src="images/Logo.png?v=1.0.0" onclick="location.reload();">
+                <img class="img-logo-mobile" src="images/logo-mobile.png?v=1.0.0" onclick="location.reload();">
                 <div class="menu-banner">
                     <span class="item-banner menu-text" id="click-whychoose">8 điểm ưu việt</span>
                     <span class="item-banner menu-text" id="click-thanhphan">thành phần</span>
@@ -1705,8 +1748,8 @@
                 </div>
                 <div class="col-md-4 col-12 box-video-content1">
                     <div class="box-detail-video">
-                        <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/ef0nJoJ0vAo?rel=0&autoplay=1&loop=1&playlist=ef0nJoJ0vAo" class="lazy-video"></iframe>
-                        <div class="subtt-box-detail-video">Bảo Thanh review về <br />cốm trí não G-Brain</div>
+                        <iframe width="100%" height="255px" src="" data-src="https://www.youtube.com/embed/OPbjJ8irSfs?rel=0&autoplay=1&loop=1&playlist=OPbjJ8irSfs" class="lazy-video"></iframe>
+                        <div class="subtt-box-detail-video">Phóng sự VTV1 đưa tin về <br />cốm trí não G-Brain</div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 box-video-content1">
@@ -1810,10 +1853,10 @@
             <div class="group-detail-suluachon">
                 <div class="box-text col-12">
                     <div class="title-suluachon">
-                        <span>CỐM TRÍ NÃO G-Brain</span> sự lựa chọn hoàn hảo <br />cho trẻ từ 2-18 tuổi
+                        <span>CỐM TRÍ NÃO G-Brain</span> sự lựa chọn <br />hoàn hảo cho trẻ từ 2-18 tuổi
                     </div>
                     <div class="content-box-suluachon">
-                        Cung cấp lượng DHA, Vitamin... từ tảo Spirulina, quả Óc chó... <br /> theo tiêu chuẩn WHO khuyến nghị.
+                        Cung cấp lượng DHA, Vitamin B1, B6, Kẽm... từ tảo Spirulina, quả Óc chó... <br /> theo tiêu chuẩn WHO khuyến nghị.
                     </div>
                 </div>
                 <div class="box-detail-suluachon">
@@ -1821,6 +1864,9 @@
                         <img src="images/Kid.png" class="img-suluachon" />
                     </div>
                     <div class="col-12 col-md-6 box-detail-suluachon-right">
+                        <div class="subtitle-suluachon">
+                            Hỗ trợ:
+                        </div>
                         <div class="checkbox-slt">
                             <img src="images/check_box.png" />
                             <span>Duy trì sự tập trung</span>
@@ -1855,24 +1901,17 @@
         </div>
         <div class="group-sosanh">
             <div class="tt-lotrinh">
-                SO SÁNH G-BRAIN VỚI DƯỠNG CHẤT & THỰC PHẨM
+                SO SÁNH G-BRAIN VỚI THỰC PHẨM THÔNG THƯỜNG
             </div>
             <div class="container">
-                <div class="box-sosanh">
-                    <div class="col-md-6 col-12 box-left-sosanh">
-                        <div><span>Dầu cá</span>: có mùi tanh, hàm lượng DHA thấp hơn, dễ nóng trong, táo bón >< G-Brain có lượng DHA gấp 4,5 lần 1 viên dầu cá</div>
-                        <div><span>Cá</span>: Có mùi tanh, ít DHA hơn (phải ăn nhiều cá mới đủ), nhiều trẻ không thích ăn cá >< B-Brain có mùi thơm dịu ngọt</div>
-                        <div><span>Sữa tươi</span>: Hàm lượng DHA thấp >< G-Brain có hàm lượng DHA = 10 cốc sữa</div>
-                    </div>
-                    <div class="col-md-6 col-12 box-right-sosanh">
-                        <img src="images/img-sosanh.png" style="width:100%" />
-                    </div>
+                <div class="box-img-sosanh">
+                    <img src="images/img-sosanh.jpg" />
                 </div>
             </div>
         </div>
         <div class="group-loiich">
             <div class="tt-lotrinh">
-                LỢI ÍCH KHI CON CÓ TRÍ NÃO TỐT?
+                LỢI ÍCH KHI CON CÓ TRÍ NÃO TỐT
             </div>
             <div class="container">
                 <div class="box-sosanh" style="flex-wrap:wrap-reverse">
@@ -1890,11 +1929,11 @@
                         </div>
                         <div class="checkbox-slt">
                             <img src="images/check_box.png" />
-                            <span>Ngoan ngoãn vâng lời ba mẹ</span>
+                            <span>Tiếp thu kiến thức và học tập tốt hơn</span>
                         </div>
                         <div class="checkbox-slt">
                             <img src="images/check_box.png" />
-                            <span>Tiếp thu kiến thức và học tập tốt hơn</span>
+                            <span>Ngoan ngoãn vâng lời ba mẹ</span>
                         </div>
                         <div class="checkbox-slt">
                             <img src="images/check_box.png" />
@@ -1906,16 +1945,19 @@
             </div>
         </div>
         <div class="tt-lotrinh">
-            LỘ TRÌNH SỬ DỤNG HIỆU QUẢ
+            LỘ TRÌNH SỬ DỤNG G-BRAIN HIỆU QUẢ (chỉ từ 2 tuần)
         </div>
         <div class="container">
-            <div class="col-12 col-md-10" style="margin-left:auto;margin-right:auto;">
+            <!--<div class="col-12 col-md-10" style="margin-left:auto;margin-right:auto;">
                 <div class="text1-lotrinh">15-30 ngày đầu (giai đoạn phục hồi):</div>
                 <div class="text2-lotrinh">Cung cấp dinh dưỡng hồi phục tế bào não</div>
                 <div class="text1-lotrinh">30-60 ngày tiếp (giai đoạn tăng tốc):</div>
                 <div class="text2-lotrinh">Các liên kết thần kinh phát triển nhanh, con nhanh nhẹn, tập trung, ghi nhớ tốt</div>
                 <div class="text1-lotrinh">60-90 cuối (giai đoạn duy trì):</div>
                 <div class="text2-lotrinh">Các tế bào, liên kết bền chặt. Con tự giác học, học nhanh, nhớ lâu, tập trung hơn hẳn</div>
+            </div>-->
+            <div class="box-img-lotrinh">
+                <img src="images/img-lotrinh.jpg" />
             </div>
         </div>
     </div>
@@ -1926,8 +1968,8 @@
             </div>
             <div class="box-detail-giaychungnhan">
                 <div class="box-detail-top">
-                    <img src="images/gcn01.png" />
                     <img src="images/gcn02.png" />
+                    <img src="images/gcn01.png" />
                     <img src="images/gcn03.png" />
                 </div>
                 <div class="box-detail-bottom">
@@ -1953,7 +1995,7 @@
             <div class="tt-review">
                 <span>Các mẹ nói gì</span>
                 <span> sau khi cho con sử dụng </span> <br />
-                <span style="color: #019044 ">CỐM TRÍ NÃO G-BRAIN</span>
+                <span style="color: #019044 ">CỐM TRÍ NÃO G-BRAIN?</span>
             </div>
             <div class="box-group-review">
                 <div class="col-md-4 col-12">
@@ -1984,7 +2026,7 @@
                 <div class="box-review1">
                     <img src="images/review1-mb.png" />
                     <div class="name-reviewer">
-                         Mẹ bé Chí Công
+                        Mẹ và bé Chí Công
                     </div>
                     <div class="content-review">
                         Phải nói là mình rất mừng khi con trai của mình cải thiện được chứng mất tập trung. Con mình bị tăng động nhẹ 2 năm rồi. Mỗi lần học là hai mẹ con như ‘’đánh vật” với nhau. Vô tình biết được sản phẩm này ở trên mạng nên mình đặt mua thử và được các dược
@@ -1994,20 +2036,20 @@
                 <div class="box-review2">
                     <img src="images/review2-mb.png" />
                     <div class="name-reviewer">
-                        Mẹ bé Ngọc Diệp
+                        Mẹ và bé Ngọc Diệp
                     </div>
                     <div class="content-review">
-                        Mình có hai bé khá sát nhau, cộng với công việc bận đi sớm về muộn, tối về phải kèm cặp con học là một ác mộng. May mắn thay được biết đến sản phẩm G-Brain qua VTV1, đến nay tôi đã sử dụng hết 1 liệu trình và thấy con khá hơn rất nhiều rồi. Tôi cũng đã
+                        Mình có hai bé khá sát nhau, cộng với công việc bận đi sớm về muộn, tối về phải kèm cặp con học là một ác mộng. May mắn thay được biết đến sản phẩm Cốm Trí Não G-Brain qua VTV1, đến nay tôi đã sử dụng hết 1 liệu trình và thấy con khá hơn rất nhiều rồi. Tôi cũng đã
                         giới thiệu cho một số người bạn và mọi người dùng cũng thấy phản hồi rất tốt
                     </div>
                 </div>
                 <div class="box-review1">
                     <img src="images/review3-mb.png" />
                     <div class="name-reviewer">
-                        Mẹ bé Trà My
+                        Mẹ và bé Trà My
                     </div>
                     <div class="content-review">
-                        Mình cho con dùng Cốm Trí Não được hai tháng rồi. Mình đọc thấy chất lượng bữa ăn khó đáp ứng đủ lượng DHA cần thiết. Ngày cho con dùng 1 ngày 1 gói là mình yên tâm rồi.
+                        Mình cho con dùng Cốm Trí Não G-Brain được hai tháng rồi. Mình đọc thấy chất lượng bữa ăn khó đáp ứng đủ lượng DHA cần thiết. Ngày cho con dùng 1 ngày 1 gói là mình yên tâm rồi.
                     </div>
                 </div>
             </div>
@@ -2034,31 +2076,31 @@
                         <div class="text-point">5</div>
                         <img src="images/icon-star.png" />
                         <div class="bg-line-gray">
-                            <div class="bg-line-green" style="width:100%;">
+                            <div class="bg-line-green" style="width:98%;">
 
                             </div>
                         </div>
                         <div class="text-percent">
-                            100%
+                            98%
                         </div>
                     </div>
                     <div class="detail-point-right">
                         <div class="text-point">4</div>
                         <img src="images/icon-star.png" />
                         <div class="bg-line-gray">
-                            <div class="bg-line-green" style="width:12%;">
+                            <div class="bg-line-green" style="width:2%;">
 
                             </div>
                         </div>
                         <div class="text-percent">
-                            0%
+                            2%
                         </div>
                     </div>
                     <div class="detail-point-right">
                         <div class="text-point">3</div>
                         <img src="images/icon-star.png" />
                         <div class="bg-line-gray">
-                            <div class="bg-line-green" style="width:8%;">
+                            <div class="bg-line-green" style="width:0%;">
 
                             </div>
                         </div>
@@ -2070,7 +2112,7 @@
                         <div class="text-point">2</div>
                         <img src="images/icon-star.png" />
                         <div class="bg-line-gray">
-                            <div class="bg-line-green" style="width:4%;">
+                            <div class="bg-line-green" style="width:0%;">
 
                             </div>
                         </div>
